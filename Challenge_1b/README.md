@@ -40,8 +40,9 @@ Challenge_1b/
 ```          
 # 🐳 Run It Like a Pro (in Docker)
 1️⃣ Build the Image
-
+```
 docker build -t pdf-analyzer .
+```
 
 2️⃣ Add Your Inputs
 Inside the input/ folder:
@@ -49,7 +50,7 @@ Inside the input/ folder:
 Drop your PDF files (e.g., doc1.pdf, doc2.pdf)
 
 Create an input.json like this:
-
+```
 {
   "persona": { "role": "UX Researcher" },
   "job_to_be_done": { "task": "analyze user behavior reports" },
@@ -58,6 +59,7 @@ Create an input.json like this:
     { "filename": "doc2.pdf" }
   ]
 }
+```
 
 3️⃣ Run It!
 ```
