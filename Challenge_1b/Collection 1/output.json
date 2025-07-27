@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "Travel Planner",
+    "job": "Plan a trip of 4 days for a group of 10 college friends.",
+    "timestamp": "2025-07-26TXX:XX:XX",
+    "total_sections_found": 98,
+    "sections_selected": 10
+  },
+  "sections": [
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Top Activities in the South of France",
+      "importance_rank": 1,
+      "relevance_score": 0.8432
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "section_title": "Exploring Nice and Marseille",
+      "importance_rank": 2,
+      "relevance_score": 0.8321
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 4,
+      "section_title": "Affordable Group Accommodations",
+      "importance_rank": 3,
+      "relevance_score": 0.8249
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "section_title": "Traveling on a Budget",
+      "importance_rank": 4,
+      "relevance_score": 0.8112
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 2,
+      "section_title": "Regional Dishes to Try",
+      "importance_rank": 5,
+      "relevance_score": 0.8037
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 2,
+      "section_title": "Transportation Tips",
+      "importance_rank": 6,
+      "relevance_score": 0.7986
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 3,
+      "section_title": "Festivals in July and August",
+      "importance_rank": 7,
+      "relevance_score": 0.7911
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 2,
+      "section_title": "Best Group Dining Spots",
+      "importance_rank": 8,
+      "relevance_score": 0.7843
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Beach and Nightlife Recommendations",
+      "importance_rank": 9,
+      "relevance_score": 0.7774
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 4,
+      "section_title": "Day Trips and Excursions",
+      "importance_rank": 10,
+      "relevance_score": 0.7718
+    }
+  ],
+  "subsections": [
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "refined_text": "Visit the Calanques near Cassis for an unforgettable day of hiking, swimming, and boating with spectacular cliffside views."
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "refined_text": "Explore the historic old town of Nice and relax on the famous Promenade des Anglais — ideal for student groups."
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 4,
+      "refined_text": "Consider booking hostels or boutique hotels in cities like Arles or Aix-en-Provence for affordable group stays."
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 2,
+      "refined_text": "Don’t miss out on tasting ratatouille, socca, and pissaladière — all local vegetarian-friendly options."
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "refined_text": "To save on transportation, groups can purchase regional rail passes or book car rentals together in advance."
+    }
+  ]
+}
