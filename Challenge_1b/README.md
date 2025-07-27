@@ -1,9 +1,138 @@
-# Challenge 1b: Multi-Collection PDF Analysis
+# 🧠 Challenge 1b: Multi-Collection PDF Analysis
+Hey there! 👋
 
-## Overview
-Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases.
+This is our solution for Adobe India Hackathon 2025 – Challenge 1b, and it’s built to do one thing really well: help a persona make sense of multiple PDFs like a pro. Whether you're a UX researcher, product manager, or analyst — this tool pulls out the most relevant insights just for you.
 
-## Project Structure
+🚀 What This Tool Can Do
+
+🔍 Reads through lots of PDFs
+
+🧠 Understands the user persona and their goal/task
+
+🪄 Picks out the most important sections
+
+📊 Gives back a beautiful, structured JSON with:
+
+✅ Top 10 ranked sections
+
+🧩 Refined subsections (digestible chunks of content)
+
+📌 Metadata with full transparency
+
+No fluff, just focused insights tailored to who you are and what you’re trying to do.
+
+📁 How the Project is Structured
+```
+├── persona_analyzer.py     
+├── Dockerfile   
+├── /input
+│   ├── input.json 
+│   └── *.pdf    
+└── /output
+    └── result.json
+```          
+# 🐳 Run It Like a Pro (in Docker)
+1️⃣ Build the Image
+
+docker build -t pdf-analyzer .
+
+2️⃣ Add Your Inputs
+Inside the input/ folder:
+
+Drop your PDF files (e.g., doc1.pdf, doc2.pdf)
+
+Create an input.json like this:
+
+{
+  "persona": { "role": "UX Researcher" },
+  "job_to_be_done": { "task": "analyze user behavior reports" },
+  "documents": [
+    { "filename": "doc1.pdf" },
+    { "filename": "doc2.pdf" }
+  ]
+}
+
+3️⃣ Run It!
+```
+docker run --rm \
+  -v "$(pwd)/input":/app/input \
+  -v "$(pwd)/output":/app/output \
+  pdf-analyzer
+```
+
+🎉 You'll find the results in output/result.json
+
+# 🔎 A Glimpse at the Output
+```
+{
+  "metadata": {
+    "input_documents": ["doc1.pdf", "doc2.pdf"],
+    "persona": "UX Researcher",
+    "job": "analyze user behavior reports",
+    "sections_selected": 10,
+    "timestamp": "2025-07-26T18:30:00Z"
+  },
+  "sections": [
+    {
+      "document": "doc1.pdf",
+      "page_number": 3,
+      "section_title": "Behavioral Patterns",
+      "importance_rank": 1,
+      "relevance_score": 0.9271
+    }
+  ],
+  "subsections": [
+    {
+      "document": "doc1.pdf",
+      
+      "page_number": 3,
+      
+      "refined_text": "Most users consistently chose feature A over B, suggesting..."
+      
+    }
+  ]
+}
+```
+# 🧠 What’s Under the Hood
+Python 3.9
+
+PyMuPDF (fitz) for extracting text with style
+
+SentenceTransformers for semantic matching magic
+
+Regex & heuristics for heading detection
+
+Docker to make life easier
+
+# ✨ Why We Built This
+
+Because PDFs are long, messy, and a pain to scan — especially when you’re trying to find the stuff that matters to you.
+
+We wanted to build something that thinks like a human, filters like a machine, and delivers insights fast. Mission accomplished. ✅
+# 🧠 Challenge 1b: Multi-Collection PDF Analysis
+Hey there! 👋
+
+This is our solution for Adobe India Hackathon 2025 – Challenge 1b, and it’s built to do one thing really well: help a persona make sense of multiple PDFs like a pro. Whether you're a UX researcher, product manager, or analyst — this tool pulls out the most relevant insights just for you.
+
+🚀 What This Tool Can Do
+
+🔍 Reads through lots of PDFs
+
+🧠 Understands the user persona and their goal/task
+
+🪄 Picks out the most important sections
+
+📊 Gives back a beautiful, structured JSON with:
+
+✅ Top 10 ranked sections
+
+🧩 Refined subsections (digestible chunks of content)
+
+📌 Metadata with full transparency
+
+No fluff, just focused insights tailored to who you are and what you’re trying to do.
+
+📁 How the Project is Structured
 ```
 Challenge_1b/
 ├── Collection 1/                    # Travel Planning
@@ -19,75 +148,82 @@ Challenge_1b/
 │   ├── challenge1b_input.json      # Input configuration
 │   └── challenge1b_output.json     # Analysis results
 └── README.md
-```
+```          
+# 🐳 Run It Like a Pro (in Docker)
+1️⃣ Build the Image
 
-## Collections
+docker build -t pdf-analyzer .
 
-### Collection 1: Travel Planning
-- **Challenge ID**: round_1b_002
-- **Persona**: Travel Planner
-- **Task**: Plan a 4-day trip for 10 college friends to South of France
-- **Documents**: 7 travel guides
+2️⃣ Add Your Inputs
+Inside the input/ folder:
 
-### Collection 2: Adobe Acrobat Learning
-- **Challenge ID**: round_1b_003
-- **Persona**: HR Professional
-- **Task**: Create and manage fillable forms for onboarding and compliance
-- **Documents**: 15 Acrobat guides
+Drop your PDF files (e.g., doc1.pdf, doc2.pdf)
 
-### Collection 3: Recipe Collection
-- **Challenge ID**: round_1b_001
-- **Persona**: Food Contractor
-- **Task**: Prepare vegetarian buffet-style dinner menu for corporate gathering
-- **Documents**: 9 cooking guides
+Create an input.json like this:
 
-## Input/Output Format
-
-### Input JSON Structure
-```json
 {
-  "challenge_info": {
-    "challenge_id": "round_1b_XXX",
-    "test_case_name": "specific_test_case"
-  },
-  "documents": [{"filename": "doc.pdf", "title": "Title"}],
-  "persona": {"role": "User Persona"},
-  "job_to_be_done": {"task": "Use case description"}
+  "persona": { "role": "UX Researcher" },
+  "job_to_be_done": { "task": "analyze user behavior reports" },
+  "documents": [
+    { "filename": "doc1.pdf" },
+    { "filename": "doc2.pdf" }
+  ]
 }
+
+3️⃣ Run It!
+```
+docker run --rm \
+  -v "$(pwd)/input":/app/input \
+  -v "$(pwd)/output":/app/output \
+  pdf-analyzer
 ```
 
-### Output JSON Structure
-```json
+🎉 You'll find the results in output/result.json
+
+# 🔎 A Glimpse at the Output
+```
 {
   "metadata": {
-    "input_documents": ["list"],
-    "persona": "User Persona",
-    "job_to_be_done": "Task description"
+    "input_documents": ["doc1.pdf", "doc2.pdf"],
+    "persona": "UX Researcher",
+    "job": "analyze user behavior reports",
+    "sections_selected": 10,
+    "timestamp": "2025-07-26T18:30:00Z"
   },
-  "extracted_sections": [
+  "sections": [
     {
-      "document": "source.pdf",
-      "section_title": "Title",
+      "document": "doc1.pdf",
+      "page_number": 3,
+      "section_title": "Behavioral Patterns",
       "importance_rank": 1,
-      "page_number": 1
+      "relevance_score": 0.9271
     }
   ],
-  "subsection_analysis": [
+  "subsections": [
     {
-      "document": "source.pdf",
-      "refined_text": "Content",
-      "page_number": 1
+      "document": "doc1.pdf",
+      
+      "page_number": 3,
+      
+      "refined_text": "Most users consistently chose feature A over B, suggesting..."
+      
     }
   ]
 }
 ```
+# 🧠 What’s Under the Hood
+Python 3.9
 
-## Key Features
-- Persona-based content analysis
-- Importance ranking of extracted sections
-- Multi-collection document processing
-- Structured JSON output with metadata
+PyMuPDF (fitz) for extracting text with style
 
----
+SentenceTransformers for semantic matching magic
 
-**Note**: This README provides a brief overview of the Challenge 1b solution structure based on available sample data. 
+Regex & heuristics for heading detection
+
+Docker to make life easier
+
+# ✨ Why We Built This
+
+Because PDFs are long, messy, and a pain to scan — especially when you’re trying to find the stuff that matters to you.
+
+We wanted to build something that thinks like a human, filters like a machine, and delivers insights fast. Mission accomplished. ✅
