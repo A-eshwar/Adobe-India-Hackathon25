@@ -62,12 +62,13 @@ Containerization	Docker
 │   ├── input/
 │   └── output/
 ├── challenge-1b/   
-│   ├── persona_analyzer.py
+│   ├── multi_collection.py
 │   ├── Dockerfile
 │   ├── requirements.txt
 │   ├── input/
 │   └── output/
 └── README.md
+
  ```              
 
 ## 🏁 How to Run
