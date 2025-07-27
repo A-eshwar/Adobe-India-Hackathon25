@@ -1,41 +1,99 @@
-# Adobe India Hackathon 2025
+# 🎯 Adobe India Hackathon 2025
+## 🔗 Connecting the Dots Challenge
+Welcome to our submission for Adobe India Hackathon 2025, under the exciting “Connecting the Dots” problem statement! 🚀
 
-## Welcome to the "Connecting the Dots" Challenge
+This project tackles two core challenges focused on extracting and analyzing insights from complex PDF documents. Our mission: help users make sense of unstructured content across multiple documents — quickly, meaningfully, and at scale.
 
-### Rethink Reading. Rediscover Knowledge
+## 📘 What's Inside?
+We’ve built two complementary tools:
 
-What if every time you opened a PDF, it didn't just sit there—it spoke to you, connected ideas, and narrated meaning across your entire library?
+## 🔹 Challenge 1a: PDF Processing Solution
+"Extract meaningful structure from a single PDF document"
 
-That's the future we're building — and we want you to help shape it.
+🧠 Extracts titles and headings using font analysis, formatting cues, and patterns
 
-In the Connecting the Dots Challenge, your mission is to reimagine the humble PDF as an intelligent, interactive experience—one that understands structure, surfaces insights, and responds to you like a trusted research companion.
+📄 Builds a structured outline (H1, H2, H3 style)
 
-### The Journey Ahead
+🗂 Outputs clean, human-readable JSON
 
-**Round 1:**
-Kick things off by building the brains — extract structured outlines from raw PDFs with blazing speed and pinpoint accuracy. Then, power it up with on-device intelligence that understands sections and links related ideas together.
+🐳 Containerized using Docker for easy deployment
 
-**Round 2:**
-It's showtime! Build a beautiful, intuitive reading webapp using Adobe's PDF Embed API. You will be using your Round 1 work to design a futuristic webapp.
+See full details → challenge-1a/README.md
 
-### Why This Matters
+## 🔹 Challenge 1b: Multi-Collection PDF Analysis
+"Understand what matters most to a persona across multiple documents"
 
-In a world flooded with documents, what wins is not more content — it's context. You're not just building tools — you're building the future of how we read, learn, and connect. No matter your background — ML hacker, UI builder, or insight whisperer — this is your stage.
+🤖 Reads input.json containing a persona + job to be done
 
-Are you in?
+📚 Analyzes multiple PDFs to extract relevant sections
 
-It's time to read between the lines. Connect the dots. And build a PDF experience that feels like magic. Let's go.
+🔍 Ranks content by semantic similarity using Sentence Transformers
 
----
+🧾 Outputs a structured result.json with:
 
-## Challenge Solutions
+Top 10 ranked sections
 
-### [Challenge 1a: PDF Processing Solution](./Challenge_1a/README.md)
-Basic PDF processing with Docker containerization and structured data extraction.
+Refined subsections
 
-### [Challenge 1b: Multi-Collection PDF Analysis](./Challenge_1b/README.md)
-Advanced persona-based content analysis across multiple document collections.
+Metadata with timestamps and scores
 
----
+See full details → challenge-1b/README.md
 
-**Note**: Each challenge directory contains detailed documentation and implementation details. Please refer to the individual README files for comprehensive information about each solution.
+## 🧠 Tech Stack
+
+Area	Tool
+
+Language	Python 3.9
+
+PDF Parsing	PyMuPDF (fitz)
+
+NLP/Embedding	Sentence Transformers
+
+Structure Logic	Regex + Heuristic Scoring
+
+Containerization	Docker
+
+## 🗂 Project Structure
+```
+├── challenge-1a/        
+│   ├── pdf_extractor.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── input/
+│   └── output/
+├── challenge-1b/   
+│   ├── persona_analyzer.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── input/
+│   └── output/
+└── README.md
+ ```              
+
+## 🏁 How to Run
+Each challenge folder (challenge-1a/ and challenge-1b/) is fully self-contained with its own:
+
+Dockerfile
+
+input/ and output/ folders
+
+Instructions in its own README
+
+You can:
+
+Run them independently
+
+Chain them together for a full pipeline (e.g., structure with 1a → analyze with 1b)
+
+## ✨ Why We Built This
+PDFs are everywhere — whitepapers, manuals, research papers, reports — and they’re often too long and unstructured for fast consumption.
+
+We wanted to give users:
+
+✨ Clarity over chaos
+
+🧠 Context that matters
+
+🚀 Tools that adapt to who they are and what they need
+
+Whether it’s a product manager seeking strategy insights, or a researcher finding relevant studies — this toolkit connects the dots.
