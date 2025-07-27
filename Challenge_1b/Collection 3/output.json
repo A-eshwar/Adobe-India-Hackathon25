@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Breakfast Ideas.pdf",
+      "Dinner Ideas - Mains_1.pdf",
+      "Dinner Ideas - Mains_2.pdf",
+      "Dinner Ideas - Mains_3.pdf",
+      "Dinner Ideas - Sides_1.pdf",
+      "Dinner Ideas - Sides_2.pdf",
+      "Dinner Ideas - Sides_3.pdf",
+      "Dinner Ideas - Sides_4.pdf",
+      "Lunch Ideas.pdf"
+    ],
+    "persona": "Food Contractor",
+    "job": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+    "timestamp": "2025-07-26T16:00:52.497755",
+    "total_sections_found": 10,
+    "sections_selected": 5
+  },
+  "sections": [
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "page_number": 1,
+      "section_title": "Vegetable Stir-Fry",
+      "importance_rank": 1,
+      "relevance_score": 0.92
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "page_number": 1,
+      "section_title": "Thai Green Curry",
+      "importance_rank": 2,
+      "relevance_score": 0.89
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 1,
+      "section_title": "Jollof Rice",
+      "importance_rank": 3,
+      "relevance_score": 0.88
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "page_number": 1,
+      "section_title": "Aloo Gobi",
+      "importance_rank": 4,
+      "relevance_score": 0.87
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "page_number": 1,
+      "section_title": "Paneer Tikka",
+      "importance_rank": 5,
+      "relevance_score": 0.85
+    }
+  ],
+  "subsections": [
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "page_number": 1,
+      "refined_text": "Saut diced onion and minced garlic until fragrant. Add broccoli, bell peppers, and snow peas, stir-fry until tender. Pour sauce over the vegetables and cook until thickened. Serve over cooked rice."
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "page_number": 1,
+      "refined_text": "Cook diced onion and minced garlic until softened. Add cubed chicken and cook until browned. Stir in green curry paste, coconut milk, chicken broth, fish sauce, and brown sugar. Add sliced bell pepper and simmer until chicken is cooked through."
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 1,
+      "refined_text": "Saut diced onion and minced garlic in vegetable oil until softened. Add diced tomatoes, tomato paste, thyme, curry powder, salt, and pepper, cook for 5 minutes. Stir in rice and cook for 2 minutes. Add chicken broth and bring to a boil. Reduce heat, cover, and simmer until rice is tender."
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "page_number": 1,
+      "refined_text": "Peel and dice potatoes, cut cauliflower into florets. Heat oil in a pan and saut diced onion and minced garlic until translucent. Add cumin, turmeric, coriander, and garam masala, cook for 1 minute. Add potatoes and cauliflower, stir to coat with spices. Cover and cook until vegetables are tender, stirring occasionally. Add salt to taste and serve."
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "page_number": 1,
+      "refined_text": "Cut paneer into cubes. Mix yogurt, lemon juice, cumin, coriander, garam masala, turmeric, and salt in a bowl. Add paneer cubes and marinate for at least 1 hour. Thread paneer onto skewers. Grill or broil until golden, turning occasionally. Serve warm."
+    }
+  ]
+}
