@@ -36,6 +36,8 @@ Challenge_1b/
 │   ├── PDFs/                       # Cooking guides
 │   ├── challenge1b_input.json      # Input configuration
 │   └── challenge1b_output.json     # Analysis results
+├── multi_collection.py             # Handles multiple collections
+├── Dockerfile                      # For containerizing the multi-collection logic
 └── README.md
 ```          
 # 🐳 Run It Like a Pro (in Docker)
