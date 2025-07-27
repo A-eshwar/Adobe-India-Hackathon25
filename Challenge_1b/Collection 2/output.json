@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Learn Acrobat - Create and Convert_1.pdf",
+      "Learn Acrobat - Create and Convert_2.pdf",
+      "Learn Acrobat - Edit_1.pdf",
+      "Learn Acrobat - Edit_2.pdf",
+      "Learn Acrobat - Export_1.pdf",
+      "Learn Acrobat - Export_2.pdf",
+      "Learn Acrobat - Fill and Sign.pdf",
+      "Learn Acrobat - Generative AI_1.pdf",
+      "Learn Acrobat - Generative AI_2.pdf",
+      "Learn Acrobat - Request e-signatures_1.pdf"
+    ],
+    "persona": "HR professional",
+    "job": "Create and manage fillable forms for onboarding and compliance.",
+    "timestamp": "2025-07-26T15:37:43.155874",
+    "total_sections_found": 85,
+    "sections_selected": 10
+  },
+  "sections": [
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "section_title": "Fill out your form",
+      "importance_rank": 1,
+      "relevance_score": 0.9451
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "page_number": 1,
+      "section_title": "Send a document to get signatures from others",
+      "importance_rank": 2,
+      "relevance_score": 0.9337
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "page_number": 2,
+      "section_title": "Steps to send in bulk",
+      "importance_rank": 3,
+      "relevance_score": 0.9122
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 3,
+      "section_title": "Sign your document",
+      "importance_rank": 4,
+      "relevance_score": 0.8998
+    },
+    {
+      "document": "Learn Acrobat - Create and Convert_2.pdf",
+      "page_number": 1,
+      "section_title": "Convert your scanned documents into fillable forms",
+      "importance_rank": 5,
+      "relevance_score": 0.891
+    },
+    {
+      "document": "Learn Acrobat - Create and Convert_1.pdf",
+      "page_number": 2,
+      "section_title": "Create a fillable form from scratch",
+      "importance_rank": 6,
+      "relevance_score": 0.8845
+    },
+    {
+      "document": "Learn Acrobat - Edit_1.pdf",
+      "page_number": 1,
+      "section_title": "Editing form fields",
+      "importance_rank": 7,
+      "relevance_score": 0.8652
+    },
+    {
+      "document": "Learn Acrobat - Edit_2.pdf",
+      "page_number": 2,
+      "section_title": "Use Acrobat tools to modify form structure",
+      "importance_rank": 8,
+      "relevance_score": 0.8413
+    },
+    {
+      "document": "Learn Acrobat - Export_2.pdf",
+      "page_number": 1,
+      "section_title": "Export form responses to Excel",
+      "importance_rank": 9,
+      "relevance_score": 0.8376
+    },
+    {
+      "document": "Learn Acrobat - Export_1.pdf",
+      "page_number": 2,
+      "section_title": "Automate form data extraction",
+      "importance_rank": 10,
+      "relevance_score": 0.8194
+    }
+  ],
+  "subsections": [
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "refined_text": "Use the Fill & Sign tool to easily fill out forms. Click into any field and start typing or use checkboxes."
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "page_number": 1,
+      "refined_text": "To request signatures, upload your PDF, add recipients, customize the message, and use 'Specify where to sign'."
+    },
+    {
+      "document": "Learn Acrobat - Create and Convert_1.pdf",
+      "page_number": 2,
+      "refined_text": "Use the Prepare Form tool to create a form from scratch by adding form fields like text boxes and check marks."
+    }
+  ]
+}
