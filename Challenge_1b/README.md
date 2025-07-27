@@ -23,13 +23,20 @@ No fluff, just focused insights tailored to who you are and what you’re trying
 
 📁 How the Project is Structured
 ```
-├── persona_analyzer.py     
-├── Dockerfile   
-├── /input
-│   ├── input.json 
-│   └── *.pdf    
-└── /output
-    └── result.json
+Challenge_1b/
+├── Collection 1/                    # Travel Planning
+│   ├── PDFs/                       # South of France guides
+│   ├── challenge1b_input.json      # Input configuration
+│   └── challenge1b_output.json     # Analysis results
+├── Collection 2/                    # Adobe Acrobat Learning
+│   ├── PDFs/                       # Acrobat tutorials
+│   ├── challenge1b_input.json      # Input configuration
+│   └── challenge1b_output.json     # Analysis results
+├── Collection 3/                    # Recipe Collection
+│   ├── PDFs/                       # Cooking guides
+│   ├── challenge1b_input.json      # Input configuration
+│   └── challenge1b_output.json     # Analysis results
+└── README.md
 ```          
 # 🐳 Run It Like a Pro (in Docker)
 1️⃣ Build the Image
